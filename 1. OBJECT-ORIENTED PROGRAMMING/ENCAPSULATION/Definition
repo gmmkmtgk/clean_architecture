@@ -1,0 +1,6 @@
+https://www.codingninjas.com/codestudio/guided-paths/basics-of-c/content/118817/offering/1382190
+
+The process of grouping data members and corresponding methods into a single unit is known as Encapsulation. It is an important part of object-oriented programming. We can create a fully encapsulated class by making all the data members private. If the data members are private, it can only be accessible within the class; no other class can access that class’s data members. 
+
+
+![Alt text](image.png)
