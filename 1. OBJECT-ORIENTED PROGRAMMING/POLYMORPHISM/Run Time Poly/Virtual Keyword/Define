@@ -1,0 +1,54 @@
+In C++, the virtual keyword is used to declare a member function in a base class as virtual. When a member function is declared as virtual, it enables dynamic dispatch or late binding, which allows the appropriate derived class function to be called based on the actual object type at runtime.
+
+class Base {
+public:
+    virtual void virtualFunction() {
+        // Function implementation
+    }
+};
+
+class Derived : public Base {
+public:
+    void virtualFunction() override {
+        // Function implementation in the derived class
+    }
+};
+
+
+In the above example, we have a base class Base with a virtual function virtualFunction(). The derived class Derived inherits from Base and overrides the virtualFunction() function with its own implementation.
+
+The virtual keyword is used in the base class to indicate that the function can be overridden in derived classes. It tells the compiler to perform dynamic dispatch when the function is called through a base class pointer or reference.
+
+In the derived class, the override keyword is used to explicitly indicate that the function is intended to override a virtual function from the base class. It helps catch errors at compile-time if the derived class function does not correctly match the base class function being overridden.
+
+Note that it's common practice to include the override keyword when overriding virtual functions, as it improves code readability and serves as documentation to indicate the intent of function overriding. However, the override keyword is optional but highly recommended.
+
+By using the virtual keyword, you enable runtime polymorphism, allowing the appropriate derived class function to be called dynamically based on the actual object type.
+
+
+
+
+
+
+
+Dynamic dispatch, also known as dynamic binding or late binding, is a mechanism in object-oriented programming that determines the appropriate function implementation to execute at runtime based on the actual type of the object being referred to. It allows polymorphic behavior by resolving function calls dynamically.
+
+Late binding occurs when the specific function implementation associated with a virtual function call is determined at runtime, rather than at compile-time. This is in contrast to early binding, where the function implementation is determined at compile-time based on the static type of the object.
+
+The dynamic dispatch process involves the following steps:
+
+When a virtual function is called through a base class pointer or reference, the compiler checks if the function is marked as virtual in the base class.
+
+The compiler generates a virtual function table, known as the vtable or virtual function table, for each class that contains at least one virtual function. The vtable is an array of function pointers.
+
+Each object of a class with virtual functions contains a hidden pointer, called the vpointer or vptr, which points to the corresponding vtable of that class.
+
+At runtime, when a virtual function is called, the vptr of the object is used to access the vtable.
+
+The vtable is then used to look up the correct function implementation for the virtual function based on the object's actual type.
+
+The appropriate function implementation is invoked, and the program continues its execution.
+
+By using dynamic dispatch and late binding, it becomes possible to achieve runtime polymorphism, where the correct function implementation is resolved dynamically based on the actual object type, allowing for more flexible and extensible code.
+
+This mechanism is crucial for implementing inheritance, overriding virtual functions, and facilitating polymorphic behavior in object-oriented languages like C++.
