@@ -1,0 +1,5 @@
+Fuction signature must be diffrent
+for arguments and number of arguments or types
+
+if only return type is diffrent then we will get Error
+as compiler will never be able to know which one to callif only return type is diffrent

@@ -1,0 +1,17 @@
+Polymorphism is a fundamental concept in object-oriented programming that allows objects of different types to be treated as objects of a common base type. It refers to the ability of an object to take on many forms or to have multiple behaviors.
+
+There are two main types of polymorphism: compile-time polymorphism (also known as static or early binding) and runtime polymorphism (also known as dynamic or late binding).
+
+Compile-time polymorphism: This is achieved through function overloading and operator overloading. It enables the selection of the appropriate function or operator based on the static types of the arguments or operands during the compilation phase.
+![Alt text](image.png)
+
+![Alt text](image-1.png)
+
+static and method oveloading
+
+
+Runtime polymorphism: This is achieved through inheritance and virtual functions. It allows objects to exhibit different behaviors based on their actual (runtime) types rather than their static types. This is achieved through the use of virtual functions, which are overridden by derived classes to provide specific implementations.
+
+dynamic and method overriding
+
+Polymorphism helps to create more flexible and extensible code by enabling code reuse, promoting modularity, and facilitating the implementation of complex behaviors through inheritance and method overriding. It allows objects to be treated generically, promoting code abstraction and encapsulation, and supporting the principle of "programming to interfaces, not implementations.
