@@ -1,0 +1,3 @@
+In C++, inheritance ambiguity occurs when a class derives from multiple base classes, and these base classes have a member or function with the same name. This creates ambiguity for the derived class, as it doesn't know which base class member or function to use.
+
+To resolve the ambiguity in inheritance, you can explicitly specify which base class's member or function you want to access using the scope resolution operator (::).
