@@ -1,0 +1,18 @@
+![Alt text](image-1.png)
+
+Modes of Inheritance 
+
+1.Public mode: If we derive a subclass from a publicbase class. Then, the base class’s public members will become public in the derived class, and protected class members will become protected in the derived class. 
+
+2.Protected mode: If we derive a subclass from a Protectedbase class. Then both public members and protected members of the base class will become protected in the derived class.
+
+3.Private mode: If we derive a subclass from a Private base class. Then both public members and protected members of the base class will become Private in the derived class.
+
+![Alt text](image.png)
+
+![Alt text](image-2.png)
+
+
+Java does not support multiple inheritance directly, where a class can inherit from multiple classes. However, Java does support multiple inheritance through interfaces. Here's an example of multiple inheritance using interfaces in Java:
+
+Java doesn't support multiple inheritance, which is necessary for hybrid inheritance.
