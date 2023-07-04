@@ -30,6 +30,5 @@ int main() {
     Derived derived;
     derived.Base1::display();  // Access display() from Base1
     derived.Base2::display();  // Access display() from Base2
-    derived.display();         // Access display() in Derived class
     return 0;
 }
