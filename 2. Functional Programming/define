@@ -1,0 +1,19 @@
+Here are some key terminologies associated with functional programming:
+
+Pure Function: A pure function is a function that always produces the same output for the same inputs and has no side effects. It does not modify external state or rely on mutable data. Pure functions are predictable, easier to test, and facilitate reasoning about code.
+
+Immutability: Immutability refers to the property of data that cannot be modified after it is created. In functional programming, data is typically immutable, meaning that operations on data create new copies rather than modifying existing data. This promotes safer and more predictable code.
+
+Higher-Order Function: A higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result. Higher-order functions enable composition, abstraction, and the ability to manipulate functions as data.
+
+Function Composition: Function composition is the process of combining multiple functions to create a new function. The output of one function becomes the input of the next function, forming a chain of transformations. Function composition enables the creation of complex transformations by breaking them down into smaller, reusable functions.
+
+Recursion: Recursion is a technique where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems. It is a fundamental tool in functional programming and allows for concise and elegant solutions to certain types of problems.
+
+First-Class Functions: In functional programming, functions are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned as values from functions. First-class functions enable higher-order functions and function composition.
+
+Closure: A closure is a function that retains access to variables from its outer scope even after the outer function has finished executing. Closures are powerful in functional programming as they allow for encapsulation and creating functions with private state.
+
+Laziness/Eager Evaluation: Laziness refers to the evaluation strategy where expressions are evaluated only when their values are required. Eager evaluation, on the other hand, evaluates expressions immediately. Functional programming languages often employ lazy evaluation to optimize performance and enable working with potentially infinite data structures.
+
+These are just a few of the terminologies associated with functional programming. Each term represents an important concept or principle that underlies the functional programming paradigm.
